@@ -2,12 +2,6 @@
 *Macro para análise de pontos influentes;
 *================================================================================;
 
-data teste;
-do mu = 0.05 , 0.25,0.5 ,0.75 ,0.95;
-test=mu;
-end;
-run;
-
 ods listing gpath="C:\Users\Furriell\Documents\SAS";
 ods graphics on;
 proc reg data=dados plots(label)=DFBETAS(unpack);
